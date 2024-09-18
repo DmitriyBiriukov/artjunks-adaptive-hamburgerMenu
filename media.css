@@ -1,0 +1,121 @@
+/* Для экранов от 1054px и ниже */
+@media (max-width: 1054px) {
+    .nav-bar, .nav-list {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
+        gap: 50px;
+        z-index: 1;
+        overflow-y: auto; /* Включаем вертикальную прокрутку внутри меню */
+    }
+    
+    .hamburger-menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .hamburger-menu img {
+        transition: transform 0.5s ease; /* Переход времени анимации */
+    }
+    
+    .hamburger-menu img.rotate {
+        transform: rotate(90deg);
+    }
+}
+
+/* Для экранов меньше 877px */
+@media (max-width: 877px) {
+    .card {
+        max-width: 187px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .main-txt {
+        font-size: 15px;
+    }
+}
+
+/* Для экранов меньше 744px */
+@media (max-width: 744px) {
+    .header {
+        background-image: url(/img/Background-2.svg);
+    }
+
+    .hamburger-menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-content {
+        gap: 32px;
+        margin-top: 216px;
+    }
+
+    .header-content-title {
+        font-size: 70px;
+    }
+
+    .header-content-subtitle {
+        max-width: 528px;
+    }
+
+    .reads-title {
+        font-size: 30px;
+    }
+
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .card {
+        max-width: 311px;
+        max-height: 619px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .main-txt {
+        font-size: 20px;
+    }
+}
+
+/* Для экранов меньше 430px */
+@media (max-width: 430px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .header {
+        background-image: url(/img/Background-3.svg);
+    }
+
+    .header-content {
+        margin-top: 216px;
+    }
+
+    .header-content-title {
+        font-size: 50px;
+    }
+}

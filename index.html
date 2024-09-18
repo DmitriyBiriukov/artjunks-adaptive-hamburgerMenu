@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTJUNKS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <header class="header">
+        <div class="container">
+
+            <nav class="header-nav">
+                <div class="logo">
+                    <h1><a href="/index.html">ARTJUNKS</a></h1>
+                </div>
+
+                <div class="nav-bar">
+                    <ul class="nav-list" id="menuList">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Artists</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Company</a></li>
+                        <button class="get-started">Get started</button>
+                    </ul>
+                </div>      
+                
+                <button class="hamburger-menu" onclick="toggleMenu()"> 
+                    <img id="hamb-logo" src="/img/Hamburger Menu.svg" alt="Menu Icon">
+                </button>
+            </nav>
+
+
+            <div class="header-content">
+                <div class="header-content-rectagle"></div>
+                <h2 class="header-content-title"> Art pieces made easy accessible for everyone</h2>
+                <p class="header-content-subtitle">Learn, buy and trade art pieces of your favorite artist around the world by using crypto currencies.</p>
+                <button class="header-content-btn">Learn more</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="main-container">
+
+            <div class="reads-title"><h3>Newest reads</h3></div>
+
+            <div class="cards-row">
+                <div class="card">
+                    
+                    <picture>
+                        <!-- Изображение для экранов с шириной до 744px с учетом плотности экрана -->
+                        <source media="(max-width: 744px)" srcset="/img/photo1.1.1.svg">
+                        <!-- Изображение для экранов с шириной до 1024px -->
+                        <source media="(max-width: 877px)" srcset="/img/photo1.1.svg">
+                        <!-- Основное изображение для больших экранов -->
+                        <img src="/img/photo1.svg" alt="Main image" style="width: 100%;">
+                    </picture>
+                    <div class="card-container">
+                        <p class="date">5 August, 2022</p>
+                        <h4 class="main-txt">France seeks to protect Russia's Morozov collection from seizure as masterpieces return home</h4>
+                        <a class="card-link" href="#!">Read more -></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <picture>
+                            <!-- Изображение для экранов с шириной до 744px с учетом плотности экрана -->
+                            <source media="(max-width: 744px)" srcset="/img/photo2.2.2.svg">
+
+                            <!-- Изображение для экранов с шириной до 1024px -->
+                            <source media="(max-width: 877px)" srcset="/img/photo2.2.svg">
+
+                            <img src="/img/photo2.svg" alt="Main image" style="width: 100%;">
+                    </picture>
+                    <div class="card-container">
+                        <p class="date">5 August, 2022</p>
+                        <h4 class="main-txt">Picasso’s muse as sea <br> creature—will it break <br> $100m at Sotheby's New <br> York sale?</h4>
+                        <a class="card-link" href="#!">Read more -></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <picture>
+                        <source media="(max-width: 744px)" srcset="/img/photo3.3.3.svg">
+                        <source media="(max-width: 877px)" srcset="/img/photo3.3.svg">
+
+                        <img src="/img/photo3.svg" alt="Main image" style="width: 100%;">
+                    </picture>
+
+                    <div class="card-container">
+                        <p class="date">5 August, 2022</p>
+                        <h4 class="main-txt">Venice Biennale 2022: all the <br> national pavilions, artists <br> and curators</h4>
+                        <a class="card-link" href="#!">Read more -></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
